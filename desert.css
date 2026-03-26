@@ -1,0 +1,592 @@
+* /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Header Styling */
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* 3. Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* 4. Mega Menu (Culture) - Hedha elli t7eb tsal7ou */
+.dropdown {
+    position: relative;
+}
+
+.mega-dropdown {
+    position: static; /* Lezem static bech el mega menu yekhou el 3ordh kemel */
+}
+
+.mega-menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 20px 5%;
+    border-top: 2px solid #5a4bda;
+    display: none; /* Skarna el menu par défaut */
+    justify-content: space-around; /* Bech ykounou b3ad 3la b3adhhom */
+}
+
+/* Ki ta3mel hover yod-hor el menu */
+.mega-dropdown:hover .mega-menu-content {
+    display: flex;
+}
+
+.mega-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.mega-column h4 {
+    color: #b22222; /* Lon a7mer kima fil taswira mta3ek */
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.mega-column a {
+    display: block;
+    color: #555;
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* 5. Dropdown El 3adi (Tunis Tours / Destinations) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* 6. Contact Button */
+.contact-btn {
+    background-color: #8c83db !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #281e69 ;
+}
+
+/* 7. Search Area */
+.search-area {
+    display: flex;
+    align-items: center;
+}
+.search-area input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+.search-area button {
+     background: none;
+      border: none; 
+      cursor: pointer; }
+      
+    .region-title {
+        background-color: #f8f9fa; /* Lon rziz sghir bech y-fara9 */
+        color: #c0392b;           /* Lon el agence mte3ek (A7mar) */
+        font-size: 11px;          /* Sghira bech ma t-ghatich 3al blays */
+        font-weight: bold;
+        padding: 8px 15px;        /* Espace dakhili */
+        text-transform: uppercase; /* Ktiiba kbiira */
+        letter-spacing: 1px;      /* Bo3d bin el 7rouf */
+        border-bottom: 1px solid #eee;
+        cursor: default;          /* Ma t-banelouch yed ki y-7ot el souris */
+    }
+   
+/* --- 8. الـ Gallery متاع التصاور (Grid System) --- */
+.gallery-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.photo-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+.photo-item:hover {
+    transform: translateY(-10px);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #dda15e;
+    padding: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* --- 9. خريطة الطريق (Visual Roadmap) --- */
+.map-section {
+    background-color: #fdf5e6;
+    padding: 60px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.roadmap-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+
+.roadmap-line {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #bc6c25;
+    transform: translateX(-50%);
+}
+
+.map-point {
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- 10. ستايل الـ Badge والـ Quote --- */
+.badge {
+    background: #bc6c25;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.quote {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #5b3311;
+    font-size: 1.4rem;
+    border-left: 5px solid #dda15e;
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+/* --- 11. ريـڭـل الـ Sections (Ksour & Content) --- */
+.ksour-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.ksour-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.ksour-img-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* --- 12. تحسينات للهاتف (Mobile Friendly) --- */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 1. تصفير الإعدادات وتوسيع الصفحة */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #fdf5e6; /* لون رمال فاتح وأنيق */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #40240c;
+}
+
+/* 2. قسم التصويرة الكبيرة (Hero Section) - العرض كامل */
+.hero-section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 85vh; /* طول التصويرة */
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+    letter-spacing: 5px;
+}
+
+/* 3. الـ Container متاع المحتوى - وسعناه باش ياخذ راحتو */
+.container {
+    width: 90%;
+    max-width: 1200px; /* وسعنا العرض من 1000 لـ 1200 */
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border-top: 10px solid #bc6c25;
+}
+
+/* 4. ريـڭـل الجدول (Circuit) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th {
+    background-color: #bc6c25;
+    color: white;
+    padding: 18px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #fffbf0; /* لون رملي خفيف عند التمرير */
+}
+
+/* 5. قسم الـ Ksour والصور */
+.chenini-main-img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.chenini-main-img:hover {
+    transform: translate(-5px, -5px);
+    
+}
+
+/* 6. فيديو ستايل */
+.video-container {
+    width: 100%;
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+/* 7. Footer */
+footer {
+    padding: 40px;
+    text-align: center;
+    color: #666;
+    background: #f4f4f4;
+    margin-top: 50px;
+}
+
+
+
+
+/* 1. الـ Wrapper الأساسي باش يسنتر كل شيء */
+.chenini-img-box {
+    display: flex;
+    justify-content: center; /* سنتر الـ Video بالعرض */
+    align-items: center;    /* سنتر الـ Video بالطول */
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;}
+    
+
+/* 2. ستايل الـ Video باش يولي مزيان ومودرن */
+.chenini-img-box video {
+    max-width: 100%; /* يمنع الـ Video باش يخرج من الشاشة في التليفون */
+    height:450px;
+    transition: transform 0.5s ease;
+}
+
+.chenini-img-box video:hover {
+    transform: scale(1.02); /* Effect سبيسيال كي تحط السوري */
+}
+
+/* 3. سنترة قسم الكتيبة (Content Section) */
+.content-section {
+    max-width: 800px; /* العرض المثالي للقراءة */
+    margin: 40px auto; /* سنترة الـ Div كامل في وسط الصفحة */
+    text-align: center; /* سنترة الكتيبة والـ Badge */
+    padding: 0 20px;
+    justify-content: center;
+}
+
+/* 4. ستايل الـ Badge (Tunisian Sahara Journey) */
+.badge {
+    display: inline-block;
+    background-color: #f3c398;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* 5. ستايل العنوان والـ Quote */
+.content-section h1 {
+    color: #40240c;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #8b5a2b;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* 6. ستايل الفقرات (Paragraphs) */
+.content-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4b3f3f;
+    text-align: justify; /* يخلي الكتيبه منظمة من الجناب الزوز */
+    margin-bottom: 20px;
+}
+.inventa-highlights {
+        background-color: #0f172a; /* أزرق غامق ملكي */
+        padding: 80px 20px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    
+    .section-title {
+        color: #c5a059; /* لون ذهبي هادئ */
+        font-size: 2.2rem;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    /* Container for the cards */
+    .highlights-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Individual Card */
+    .highlight-card {
+        background-color: #ffffff;
+        padding: 40px 25px 30px;
+        border-radius: 12px;
+        width: 260px;
+        text-align: left;
+        transition: transform 0.3s ease;
+        border-bottom: 5px solid #c5a059; /* خط ذهبي من الأسفل */
+    }
+    
+    .highlight-card:hover {
+        transform: translateY(-10px); /* تحريك الكرت عند مرور الماوس */
+    }
+    
+    /* Icon Box */
+    .icon-box {
+        background: #0f172a;
+        color: #c5a059;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        margin: -70px auto 20px; /* تخلي الأيقونة خارجة موسطة الفوق */
+        border: 3px solid #c5a059;
+    }
+    
+    .highlight-card h3 {
+        font-size: 1.2rem;
+        color: #0f172a;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    
+    .highlight-card ul {
+        list-style: none;
+        padding: 0;
+    }
+    .highlight-card ul li {
+        font-size: 0.95rem;
+        color: #444;
+        margin-bottom: 12px;
+        padding-left: 20px;
+        position: relative;
+        line-height: 1.4;
+    }
+    
+    /* Bullet points (The luxury checkmark) */
+    .highlight-card ul li::before {
+        content: "✓";
+        color: #c5a059;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

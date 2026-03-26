@@ -1,0 +1,446 @@
+.final-cta {
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Lawn dhahbi mte3 chams */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-content span {
+    font-weight: bold;
+    color: #2ecc71; /* Lawn akhdhar mte3 spring */
+}
+
+.guide-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Effet dghabech wra el-box */
+    display: inline-block;
+    padding: 30px 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-book {
+    display: inline-block;
+    background: #e67e22; /* Lawn orange mte3 adventure */
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+}
+
+.btn-book:hover {
+    background: #d35400;
+    transform: translateY(-5px); /* Titla3 chwaya l-fou9 kif tmes-ha */
+    box-shadow: 0 10px 25px rgba(230, 126, 34, 0.6);
+}
+/* 1. Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Header Styling */
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* 3. Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* 4. Mega Menu (Culture) - Hedha elli t7eb tsal7ou */
+.dropdown {
+    position: relative;
+}
+
+.mega-dropdown {
+    position: static; /* Lezem static bech el mega menu yekhou el 3ordh kemel */
+}
+
+.mega-menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 20px 5%;
+    border-top: 2px solid #5a4bda;
+    display: none; /* Skarna el menu par défaut */
+    justify-content: space-around; /* Bech ykounou b3ad 3la b3adhhom */
+}
+
+/* Ki ta3mel hover yod-hor el menu */
+.mega-dropdown:hover .mega-menu-content {
+    display: flex;
+}
+
+.mega-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.mega-column h4 {
+    color: #b22222; /* Lon a7mer kima fil taswira mta3ek */
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.mega-column a {
+    display: block;
+    color: #555;
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* 5. Dropdown El 3adi (Tunis Tours / Destinations) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* 6. Contact Button */
+.contact-btn {
+    background-color: #8c83db !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #281e69 ;
+}
+
+/* 7. Search Area */
+.search-area {
+    display: flex;
+    align-items: center;
+}
+.search-area input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+.search-area button {
+     background: none;
+      border: none; 
+      cursor: pointer; }
+      
+    .region-title {
+        background-color: #f8f9fa; /* Lon rziz sghir bech y-fara9 */
+        color: #c0392b;           /* Lon el agence mte3ek (A7mar) */
+        font-size: 11px;          /* Sghira bech ma t-ghatich 3al blays */
+        font-weight: bold;
+        padding: 8px 15px;        /* Espace dakhili */
+        text-transform: uppercase; /* Ktiiba kbiira */
+        letter-spacing: 1px;      /* Bo3d bin el 7rouf */
+        border-bottom: 1px solid #eee;
+        cursor: default;          /* Ma t-banelouch yed ki y-7ot el souris */
+    }
+    /* El Body dima khallih abyadh wala lon khfif bech matjich taswira wra taswira */
+body {
+    background-color: #c7f7dc; 
+    margin: 0;
+    padding: 0;
+}
+.hero-section {
+    width: 100%;          /* Te5ou el blasa kemla mel 7it lel 7it */
+    height: auto;         /* Khalliha tetbadal 7asb toul el taswira */
+    margin: 0;            /* Na77i el fadhé abyadh mel jnab */
+    padding: 0;           /* Na77i el fadhé elli dakhil el section */
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;          /* Taswira tetjabed 3al 3ordh kemel mta3 l'écran */
+    height: 400px;        /* El toul elli t7eb 3lih (7ott el rbe3 wala nos l'écran kima t7eb) */
+    object-fit: cover;    /* Tkhalli el taswira dima mrigla mahma jet l'écran kbira */
+    display: block;       /* Tna77i el fadhé el abyadh sghir mel louta */
+}
+.nature-description {
+    padding: 40px 10%;    /* Ta3mel fadhé mel fou9 w tcentri el kteba */
+    text-align: center;   /* Trod el kteba fil wast */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;     /* Tkhalli fadhé bin el stroun bech el 9raya tas-hel */
+    color: #333;          /* Lon gris dhelma chwaya bech ma touja3ch el 3in */
+    font-size: 18px;
+}
+.nature-intro {
+    max-width: 1000px;     /* Bech el ktaba ma tat-jbadch 3al ecran kemel (as-hel fil 9raya) */
+    margin: 60px auto;     /* 'auto' hiya elli t-centri el paragraphe fil wast bedhabt */
+    padding: 0 40px;       /* Fadhé sghir 3al jnab bech ma talsaqch fil ecran sghir */
+    text-align: left;    /* Khalliha 'left' kima fil screenshot wala 'center' ken t7ebha mcentrya */
+}
+
+.nature-intro h2 {
+    font-family: 'Playfair Display', serif; /* Wala 'Arial' ken ma3andekch fonts */
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.nature-intro p {
+    font-size: 18px;       /* Kobr el ktaba */
+    line-height: 1.8;      /* AHAM FAZA: hedhi elli t-khalli el fadhé bin el stroun */
+    color: #444;           /* Lon gris mrigel lel 3in */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 1px;     /* Fadhé sghir bin el kelmet */
+}
+
+.nature-intro strong {
+    color: #000;           /* T-ghamaq el blays el mohemma kima fil model */
+    font-weight: 700;
+}
+/*partie ain drahemmmmmmmmmm*/
+.ain-draham-section {
+    width: 100%;
+    text-align: center;    /* T-centri el titre w el paragraphe */
+    padding: 50px 0;
+    background-color: #e2f3e5; /* Hadha el lon el khfif elli 3andek fil screenshot */
+}
+
+.gallery-title {
+    font-size: 32px;
+    margin-bottom: 30px;   /* Fadhé bin el titre w el tsawer */
+    color: #2e4a31;
+}
+
+.nature-gallery {
+    display: flex;          /* Traj3 el 4 tsawer ba7dha b3adhhom barka */
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;    /* Fadhé bin el tsawer w el paragraphe */
+}
+
+.nature-gallery img {
+    width: 22%;             /* Kobr mrigel lel 4 tsawer */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.simple-nature-text {
+    max-width: 800px;
+    margin: 0 auto;         /* T-centri el paragraphe ta7t el gallery */
+}
+
+.simple-nature-text p {
+    font-size: 18px;
+    line-height: 1.8;      /* El fadhé bin el stroun kima tfahemna */
+    color: #444;
+} .inventa-highlights {
+    background-color: #0f172a; /* أزرق غامق ملكي */
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    color: #c5a059; /* لون ذهبي هادئ */
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container for the cards */
+.highlights-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Card */
+.highlight-card {
+    background-color: #ffffff;
+    padding: 40px 25px 30px;
+    border-radius: 12px;
+    width: 260px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-bottom: 5px solid #c5a059; /* خط ذهبي من الأسفل */
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px); /* تحريك الكرت عند مرور الماوس */
+}
+
+/* Icon Box */
+.icon-box {
+    background: #0f172a;
+    color: #c5a059;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin: -70px auto 20px; /* تخلي الأيقونة خارجة موسطة الفوق */
+    border: 3px solid #c5a059;
+}
+
+.highlight-card h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.highlight-card ul {
+    list-style: none;
+    padding: 0;
+}
+.highlight-card ul li {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.4;
+}
+
+/* Bullet points (The luxury checkmark) */
+.highlight-card ul li::before {
+    content: "✓";
+    color: #c5a059;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}/* Container el-video */
+/* El-Page el-kol */
+/* El-Page el-kol */
+/* 1. Hadha el-mas'oul 3al centrage el-kemel */
+.main-wrapper {
+    display: flex;
+    justify-content: center; /* Wast horizontal */
+    align-items: center;     /* Wast vertical */
+    width: 100%;
+    padding: 50px 0;         /* Khalli chwaya hwa fou9 w louta */
+}
+
+.video-container {
+    /* 1. T-double el-3ordh (t7awelha l-80% wala 90% mel ecran) */
+    width: 85%;              
+    max-width: 1200px;       /* Akber 3ordh tnajem toussalou */
+    
+    /* 2. Na99asna fi el-toul (bech twalli rectangle dhiyi9) */
+    height: 300px;           /* Tnajem tbadalha 250px ken t7ebha adhya9 */
+    
+    margin: 20px auto;       /* Centrage s7i7 */
+    position: relative;
+    
+    /* 3. Na77ina la7ref el-mdaouara */
+    border-radius: 0;        
+    overflow: hidden;
+    border: none;            /* Na77i ay cadre zayed */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;            /* Te5ou el-toul el-jdid (300px) */
+    
+    /* 4. Aham 7aja: tkhalli el-video t3abbi el-3ordh el-kbir mghir ma tit-asra */
+    object-fit: cover;       
+    display: block;
+}
+
+/* T-rigel el-ktiba bech to93od dima fi el-wast */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+/* 3. El-ktiba tawwa tji Fou9 el-video s7i7 */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    pointer-events: none;    /* Matsakarch el-click 3al video */
+}
+
+.overlay-text h1 {
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    margin: 0;
+}

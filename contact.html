@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="téléchargement.png" alt="Inventa Tourism Logo" />
+        </div>
+
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Tunis Tours</a>
+              <div class="dropdown-content">
+                <div class="region-title">Choose your theme</div>
+                <a href="nature.html">Nature tour</a>
+                <a href="sahara.html">Sahara tour</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdtn">Destinations</a>
+              <div class="dropdown-content">
+                <div class="region-title">Grand Tunis</div>
+                <a href="grandtunis.html">3 Icons, 1 Journey</a>
+
+                <div class="region-title">Le Nord</div>
+                <a href="dougga.html">Dougga (Béja)</a>
+
+                <div class="region-title">Le Sahel & Centre</div>
+                <a href="jam.html">El Jem (Mahdia)</a>
+                <a href="capbon.html">le Cap Bon</a>
+
+                <div class="region-title">
+                  Le Sud (El Sahara & Authenticité)
+                </div>
+                <a href="tat.html">Matmata & Tataouine</a>
+                <a href="tozeurr.html">Tozeur</a>
+                <a href="saharadesert.html"> Sahara desert</a>
+
+                <div class="region-title">L'ile</div>
+                <a href="djerbaa.html">Djerba</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Culture</a>
+              <div class="dropdown-content">
+                <div class="region-title">
+                  <h4>Tunisian Traditions</h4>
+                  <a href="festival.html">Festivals & Music</a>
+                  <a href="clothetradu.html">Traditional Clothes</a>
+                </div>
+                <div class="region-title">
+                  <h4>Gastronomy</h4>
+                  <a href="food.html">Tunisian Food</a>
+                  <a href="wineoil.html"> Olive Oil</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="contact.html" class="contact-btn">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <div class="search-area">
+          <input type="text" placeholder="Search.." />
+          <button>🔍</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Tailor Your Experience</h2>
+        <p>
+          Fill in the details below, and we will craft your perfect Tunisian
+          journey.
+        </p>
+
+        <form class="travel-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Last Name" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+216 ..." required />
+            </div>
+            <div class="form-group">
+              <label>Your Country</label>
+              <select required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="USA">United States</option>
+                <option value="FRA">France</option>
+                <option value="GER">Germany</option>
+                <option value="UK">United Kingdom</option>
+                <option value="TUN">Tunisia</option>
+                <option value="OTHER">Other...</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Adults</label>
+              <input type="number" min="1" value="1" />
+            </div>
+            <div class="form-group">
+              <label>Number of Children</label>
+              <input type="number" min="0" value="0" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Arrival Date</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <label>Duration (Days)</label>
+              <input type="number" placeholder="e.g. 7" min="1" />
+            </div>
+            <div class="form-group">
+              <label>Budget ($)</label>
+              <input type="text" placeholder="e.g. 2000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Who are you traveling with?</label>
+            <div class="radio-group">
+              <label class="radio-item"
+                ><input type="radio" name="style" value="couple" /><span
+                  class="custom-radio"
+                  >Couple</span
+                ></label
+              >
+              <label class="radio-item"
+                ><input type="radio" name="style" value="family" /><span
+                  class="custom-radio"
+                  >Family</span
+                ></label
+              >
+              <label class="radio-item"
+                ><input type="radio" name="style" value="friend" /><span
+                  class="custom-radio"
+                  >Friends</span
+                ></label
+              >
+              <label class="radio-item"
+                ><input type="radio" name="style" value="group" /><span
+                  class="custom-radio"
+                  >Group</span
+                ></label
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>What are you most excited about?</label>
+            <div class="checkbox-grid">
+              <label class="check-item"
+                ><input type="checkbox" /> 🫒 Olive Oil Tasting</label
+              >
+              <label class="check-item"
+                ><input type="checkbox" /> 🎸 Music Festivals</label
+              >
+              <label class="check-item"
+                ><input type="checkbox" /> 🏛️ Ancient History</label
+              >
+              <label class="check-item"
+                ><input type="checkbox" /> 🐪 Sahara Adventure</label
+              >
+              <label class="check-item"
+                ><input type="checkbox" /> 🌄 Nature & Views</label
+              >
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>How should we contact you?</label>
+              <select>
+                <option>WhatsApp</option>
+                <option>Email</option>
+                <option>Phone Call</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Best Time to Reach You</label>
+              <input type="text" placeholder="e.g. Morning/Afternoon" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Additional Notes</label>
+            <textarea
+              rows="4"
+              placeholder="Tell us about any specific dreams for this trip..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            SEND MY TUNISIAN PLAN
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
