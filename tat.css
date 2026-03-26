@@ -1,0 +1,903 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfaf5;
+        }
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .intro {
+            font-size: 1.2rem;
+            color: #c05d1d;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #8b4513;
+            border-left: 5px solid #d4a373;
+            padding-left: 15px;
+        }
+        p {
+            color: #555;
+            text-align: justify;
+        }
+        .highlight {
+            color: #d4a373;
+            font-weight: bold;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .intro {
+            font-size: 1.2rem;
+            color: #c05d1d;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #8b4513;
+            border-left: 5px solid #d4a373;
+            padding-left: 15px;
+        }
+        p {
+            color: #555;
+            text-align: justify;
+        }
+        .highlight {
+            color: #d4a373;
+            font-weight: bold;
+        }
+        /* تحط الـ Table في الوسط وتزيدها شوية ديكور */
+.comparison-table {
+    width: 80%;            /* تنجم تبدلها حسب العرض اللي تحبو */
+    margin: 50px auto;     /* الـ auto هي اللي تجيبها في الوسط بالضبط */
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* ظل خفيف باش تظهر مزيانة */
+    border-radius: 12px;
+    overflow: hidden;      /* باش الـ border-radius يبان في الحروف */
+}
+
+/* ستايل الـ Header */
+.comparison-table thead tr {
+    background-color: #8b4513; /* اللون البني الصحراوي */
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.comparison-table th, 
+.comparison-table td {
+    padding: 15px 20px;
+}
+
+/* ستايل الصفوف */
+.comparison-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* تلوين صف بصف باش القراية تكون أسهل */
+.comparison-table tbody tr:nth-of-type(even) {
+    background-color: #f9f4ef;
+}
+
+/* حركة خفيفة كي تحط الماوس على الصف */
+.comparison-table tbody tr:hover {
+    background-color: #f1e5d9;
+    transition: 0.3s;
+}
+
+/* ستايل العمود الأول */
+.feature-col {
+    font-weight: bold;
+    color: #c05d1d;
+    width: 25%;
+}
+     .hero-text {
+    position: absolute;
+    top: 50%; /* تجيب النص في نص التصويرة بالطول */
+    left: 50%; /* تجيب النص في نص التصويرة بالعرض */
+    transform: translate(-50%, -50%); /* تعدل السنتر متاع النص بالضبط في الوسط */
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* ظل ورا الكتيب باش تولي تتقرى بالسيف */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* الـ Container الأساسي */
+}
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image-container {
+    position: relative; /* هذي أهم حاجة باش النص يتحط بالنسبة للـ div هذا */
+    width: 100%;
+    height: 80vh; /* طول القسم، تنجم تبدلو حسب الرغبة */
+}
+
+/* ستايل التصويرة */
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* باش التصويرة ما تتجبدش وتتحافظ على أبعادها */
+    filter: brightness(70%); /* تنقص شوية في ضوء التصويرة باش الكتيب تبان أوضح */}
+    .ksour-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.ksour-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.ksour-title {
+    font-family: 'Segoe UI', sans-serif;
+    color: #8b4513; /* نفس اللون البني الصحراوي */
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* خط صغير تحت العنوان للزينة */
+.ksour-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #d4a373;
+    margin: 10px auto 0;
+}
+
+.ksour-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+    font-family: 'Georgia', serif; /* تغيير الفونت للفقرة يعطي فخامة */
+}
+
+.ksour-text strong {
+    color: #c05d1d;
+}
+.douiret-section {
+    padding: 80px 10%;
+    background-color: #fdfaf5; /* لون كريمي خفيف باش تفرق بين الـ sections */
+}
+
+.douiret-container {
+    display: flex;
+    align-items: center; /* يخلي النص والتصويرة في نفس المستوى عمودياً */
+    gap: 40px; /* المسافة بين الكتيببة والتصويرة */
+}
+
+.douiret-text {
+    flex: 1; /* ياخذ شطر المساحة */
+}
+
+.douiret-text h2 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.douiret-text p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.douiret-image {
+    flex: 1; /* ياخذ الشطر الثاني */
+}
+
+.douiret-image img {
+    width: 100%;
+    border-radius: 15px; /* حواشي مدورة مزيانة */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+/* حركة كي تحط الماوس على التصويرة */
+.douiret-image img:hover {
+    transform: scale(1.02);
+}
+
+/* التعديل متاع التليفون (Responsive) */
+@media (max-width: 768px) {
+    .douiret-container {
+        flex-direction: column; /* يوليوا فوق بعضهم في التليفون */
+        text-align: center;
+    }
+}
+/* Container الأساسي */
+.dino-section {
+    background-color: #231f1b; /* لون بني غامق جداً كيف اللي في الصورة */
+    padding: 100px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dino-container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ستايل التصويرة مع الإطار الذهبي */
+.dino-image-box {
+    flex: 1.2;
+}
+
+.image-border {
+    border: 2px solid #a68a56; /* إطار ذهبي رقيق */
+    padding: 15px;
+    position: relative;
+}
+
+.image-border img {
+    width: 100%;
+    display: block;
+    filter: sepia(40%) contrast(1.1); /* Effect تاريخي للتصويرة */
+}
+
+/* ستايل الكتيبة */
+.dino-content {
+    flex: 1;
+    color: #f5f5f5;
+}
+
+.dino-badge {
+    color: #d4a373;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 1px solid #d4a373;
+    padding: 5px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.dino-heading {
+    font-size: 3.5rem; /* كبر الخط كيف اللي في الصورة */
+    font-family: 'Playfair Display', serif; /* إذا تحب تزيد فونت فخم */
+    color: #d4a373;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.dino-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    text-align: justify;
+}
+
+.highlight-dino {
+    color: #d4a373;
+    font-weight: bold;
+    border-bottom: 1px dashed #d4a373;
+}
+
+/* للتحكم في الهواتف */
+@media (max-width: 900px) {
+    .dino-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .dino-heading {
+        font-size: 2.5rem;
+    }
+}
+.chenini-section {
+    padding: 100px 10%;
+    background-color: #fdfaf5;
+    overflow: hidden;
+}
+
+.chenini-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.chenini-text {
+    flex: 1;
+}
+
+.chenini-title {
+    font-size: 2.8rem;
+    color: #8b4513;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.chenini-p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.chenini-stats {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    color: #c05d1d;
+}
+
+.chenini-img-box {
+    flex: 1;
+    position: relative;
+}
+
+.chenini-main-img {
+    width: 100%;
+    border-radius: 20px 0 20px 0; /* شكل غير منتظم يعطي لمسة فنية */
+    box-shadow: 20px 20px 0px #d4a373; /* ظل صلب (Solid shadow) مزيان برشة */
+    transition: 0.4s;
+}
+
+.chenini-main-img:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 30px 30px 0px #8b4513;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .chenini-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .chenini-stats {
+        justify-content: center;
+    }
+}.ksour-section {
+    padding: 80px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ksour-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ksour-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 50px;
+    text-align: justify; /* يخلي الكتيببة مستوية من الأجناب */
+}
+
+/* ستايل الـ Gallery */
+.ksour-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ksour-img-wrapper {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 300px; /* طول التصويرة */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.ksour-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يخلي التصويرة ما تتجبدش */
+    transition: transform 0.5s ease;
+}
+
+/* Effect كي تلمس التصويرة تكبر شوية */
+.ksour-img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+/* تعديل للتليفونات باش يوليوا تحت بعضهم */
+@media (max-width: 768px) {
+    .ksour-gallery {
+        flex-direction: column;
+    }
+    .ksour-img-wrapper {
+        height: 250px;
+    }
+}.ksour-list {
+    text-align: left;
+    background: #f9f4ef;
+    padding: 30px;
+    border-left: 5px solid #8b4513;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.ksour-list h3 {
+    color: #8b4513;
+    margin-top: 0;
+}
+
+.ksour-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ksour-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #d4a373;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.ksour-list li strong {
+    color: #c05d1d;
+}
+
+.ksour-list li:last-child {
+    border-bottom: none;
+}/* تحسين الكتيببة باش تولي أوضح وفخمة */
+.ksour-text {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #333;
+    max-width: 950px;
+    margin: 0 auto 60px auto;
+    column-count: 1; /* تنجم تردها 2 إذا تحب ستايل مجلة */
+    column-gap: 40px;
+    position: relative;
+}
+
+/* إضافة أيقونة "اقتباس" أو زينة في أول الفقرة */
+.ksour-text::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8b4513;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+/* تحسين الـ Gallery باش تكون ديناميكية أكثر */
+.ksour-gallery {
+    display: flex;
+    gap: 15px;
+    perspective: 1000px; /* يعطي تأثير 3D خفيف */
+}
+
+.ksour-img-wrapper {
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* تأثير "Tilt" كي تحط الماوس */
+.ksour-img-wrapper:hover {
+    transform: translateY(-15px) rotateX(5deg);
+    z-index: 10;
+}
+
+.ksour-img-wrapper img {
+    border: 3px solid #fdfaf5; /* إطار أبيض خفيف يبرز التصويرة */
+}
+.starwars-section {
+    position: relative;
+    padding: 100px 8%;
+    background-image: url('starwars-tataouine-bg.jpg'); /* حط تصويرة سيدي إدريس أو قصر حدادة */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: #fff;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* طبقة ظل باش الكتيببة تتقرى مليح */
+.starwars-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(90deg, rgba(66, 89, 96, 0.9) 30%, rgba(76, 103, 110, 0.4) 100%);
+    z-index: 1;
+}
+
+.starwars-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+}
+
+.sw-title {
+    font-size: 3.5rem;
+    color: #4c3029; 
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.sw-grid {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.sw-main-text {
+    flex: 2;
+}
+
+.sw-main-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* ستايل الكروت الصغيرة على اليمين */
+.sw-locations-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.location-card {
+    background: rgb(228, 248, 250);
+    border-left: 4px solid #125c62;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.location-card:hover {
+    background: rgb(232, 252, 251);
+    transform: translateX(10px);
+}
+
+.location-card h4 {
+    color: #71120d;
+    margin-bottom: 5px;
+}
+
+.sw-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 2px solid #4e1414;
+    color: #2e2a01;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.sw-btn:hover {
+    background-color: #136a6a;
+    color: #050707;
+    box-shadow: 0 0 20px rgba(60, 125, 161, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .sw-grid { flex-direction: column; }
+    .sw-title { font-size: 2.5rem; }
+}/* Container for the cards */
+.highlights-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Card */
+.highlight-card {
+    background-color: #ffffff;
+    padding: 40px 25px 30px;
+    border-radius: 12px;
+    width: 260px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-bottom: 5px solid #c5a059; /* خط ذهبي من الأسفل */
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px); /* تحريك الكرت عند مرور الماوس */
+}
+
+/* Icon Box */
+.icon-box {
+    background: #0f172a;
+    color: #c5a059;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin: -70px auto 20px; /* تخلي الأيقونة خارجة موسطة الفوق */
+    border: 3px solid #c5a059;
+}
+
+.highlight-card h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.highlight-card ul {
+    list-style: none;
+    padding: 0;
+}
+.highlight-card ul li {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.4;
+}
+
+/* Bullet points (The luxury checkmark) */
+.highlight-card ul li::before {
+    content: "✓";
+    color: #c5a059;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2. Header Styling */
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* 3. Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* 4. Mega Menu (Culture) - Hedha elli t7eb tsal7ou */
+.dropdown {
+    position: relative;
+}
+
+.mega-dropdown {
+    position: static; }
+
+.mega-menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 20px 5%;
+    border-top: 2px solid #5a4bda;
+    display: none;
+    justify-content: space-around; 
+}
+
+/* Ki ta3mel hover yod-hor el menu */
+.mega-dropdown:hover .mega-menu-content {
+    display: flex;
+}
+
+.mega-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.mega-column h4 {
+    color: #b22222;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.mega-column a {
+    display: block;
+    color: #555;
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* 5. Dropdown El 3adi (Tunis Tours / Destinations) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* 6. Contact Button */
+.contact-btn {
+    background-color: #8c83db !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #281e69 ;
+}
+
+/* 7. Search Area */
+.search-area {
+    display: flex;
+    align-items: center;
+}
+.search-area input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+.search-area button {
+     background: none;
+      border: none; 
+      cursor: pointer; }
+      
+    .region-title {
+        background-color: #f8f9fa; /* Lon rziz sghir bech y-fara9 */
+        color: #c0392b;           /* Lon el agence mte3ek (A7mar) */
+        font-size: 11px;          /* Sghira bech ma t-ghatich 3al blays */
+        font-weight: bold;
+        padding: 8px 15px;        /* Espace dakhili */
+        text-transform: uppercase; /* Ktiiba kbiira */
+        letter-spacing: 1px;      /* Bo3d bin el 7rouf */
+        border-bottom: 1px solid #eee;
+        cursor: default;          /* Ma t-banelouch yed ki y-7ot el souris */
+    }
+    body{
+        background-color:rgb(245, 240, 199);
+    }
+    .hero-section {
+        width: 100%;          /* Te5ou el blasa kemla mel 7it lel 7it */
+        height: auto;         /* Khalliha tetbadal 7asb toul el taswira */
+        margin: 0;            /* Na77i el fadhé abyadh mel jnab */
+        padding: 0;           /* Na77i el fadhé elli dakhil el section */
+        overflow: hidden;
+    }
+    
+    .hero-img {
+        width: 100%;          
+        height: 400px;        
+        object-fit: cover;    
+        display: block;       
+    }
+
+
+
+    
+/* Section About Us */
+.heroo-text{
+    background-color: #ffffff; /* Fond abyadh kima China Highlights */
+    padding: 60px 10%;      /* Espace kbir mel fou9 w mel jnab */
+    color: #333;            /* Lon el klem gris ghamer */
+    line-height: 1.8;       /* Bo3d bin el stour bech el 3in terta7 */
+    display: flex;
+    flex-direction:column; /* يخليهم فوق بعضهم */
+    margin-left:80px;         /* يوسط الـ Container بيدو في الصفحة */
+    padding-left:80px;
+}
+
+.heroo-text h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif; /* Font mte3 "luxe" */
+    margin-bottom: 40px;
+    color: #000;
+}
