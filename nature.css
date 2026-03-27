@@ -1,0 +1,254 @@
+/* 1. Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #c7f7dc;
+}
+
+/* 2. Header & Navigation */
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* 3. Dropdown Menu (Standard) */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.region-title {
+    background-color: #f8f9fa;
+    color: #c0392b;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee;
+    cursor: default;
+}
+
+/* 4. Contact Button & Search */
+.contact-btn {
+    background-color: #8c83db !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #281e69;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+}
+
+.search-area input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-area button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 5. Hero Section */
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 70px; /* Space for fixed header */
+}
+
+.hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* 6. Content Sections (Nature Intro & Gallery) */
+.nature-intro {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.nature-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.nature-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.ain-draham-section {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e2f3e5;
+}
+
+.gallery-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2e4a31;
+}
+
+.nature-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.nature-gallery img {
+    width: 22%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* 7. Highlights Section (Cards) */
+.inventa-highlights {
+    background-color: #0f172a;
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    color: #c5a059;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.highlights-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.highlight-card {
+    background-color: #ffffff;
+    padding: 40px 25px 30px;
+    border-radius: 12px;
+    width: 260px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-bottom: 5px solid #c5a059;
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-box {
+    background: #0f172a;
+    color: #c5a059;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin: -70px auto 20px;
+    border: 3px solid #c5a059;
+}
+
+.highlight-card h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight-card ul {
+    list-style: none;
+}
+
+.highlight-card ul li {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.highlight-card ul li::before {
+    content: "✓";
+    color: #c5a059;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
