@@ -1,0 +1,596 @@
+/* 1. Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Header Styling */
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* 3. Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* 4. Mega Menu (Culture) - Hedha elli t7eb tsal7ou */
+.dropdown {
+    position: relative;
+}
+
+.mega-dropdown {
+    position: static; }
+
+.mega-menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 20px 5%;
+    border-top: 2px solid #5a4bda;
+    display: none;
+    justify-content: space-around; 
+}
+
+/* Ki ta3mel hover yod-hor el menu */
+.mega-dropdown:hover .mega-menu-content {
+    display: flex;
+}
+
+.mega-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.mega-column h4 {
+    color: #b22222;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.mega-column a {
+    display: block;
+    color: #555;
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* 5. Dropdown El 3adi (Tunis Tours / Destinations) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* 6. Contact Button */
+.contact-btn {
+    background-color: #8c83db !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #281e69 ;
+}
+
+/* 7. Search Area */
+.search-area {
+    display: flex;
+    align-items: center;
+}
+.search-area input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+.search-area button {
+     background: none;
+      border: none; 
+      cursor: pointer; }
+      
+    .region-title {
+        background-color: #f8f9fa; /* Lon rziz sghir bech y-fara9 */
+        color: #c0392b;           /* Lon el agence mte3ek (A7mar) */
+        font-size: 11px;          /* Sghira bech ma t-ghatich 3al blays */
+        font-weight: bold;
+        padding: 8px 15px;        /* Espace dakhili */
+        text-transform: uppercase; /* Ktiiba kbiira */
+        letter-spacing: 1px;      /* Bo3d bin el 7rouf */
+        border-bottom: 1px solid #eee;
+        cursor: default;          /* Ma t-banelouch yed ki y-7ot el souris */
+    }
+    body{
+        background-color:rgb(245, 240, 199);
+    }
+    .hero-section {
+        width: 100%;          /* Te5ou el blasa kemla mel 7it lel 7it */
+        height: auto;         /* Khalliha tetbadal 7asb toul el taswira */
+        margin: 0;            /* Na77i el fadhé abyadh mel jnab */
+        padding: 0;           /* Na77i el fadhé elli dakhil el section */
+        overflow: hidden;
+    }
+    
+    .hero-img {
+        width: 100%;          
+        height: 400px;        
+        object-fit: cover;    
+        display: block;       
+    }
+
+
+
+    
+/* Section About Us */
+.heroo-text{
+    background-color: #ffffff; /* Fond abyadh kima China Highlights */
+    padding: 60px 10%;      /* Espace kbir mel fou9 w mel jnab */
+    color: #333;            /* Lon el klem gris ghamer */
+    line-height: 1.8;       /* Bo3d bin el stour bech el 3in terta7 */
+    display: flex;
+    flex-direction:column; /* يخليهم فوق بعضهم */
+    margin-left:80px;         /* يوسط الـ Container بيدو في الصفحة */
+    padding-left:80px;
+}
+
+.heroo-text h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif; /* Font mte3 "luxe" */
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.about-text {
+    font-size: 17px;
+    margin-bottom: 25px;
+    max-width: 900px;      /* Ma nkhallich el klem yemchi lel ekher el page */
+    padding-left: 0%;
+}
+
+
+/* Responsive: fil portable n-na9sou fil padding */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 5%;
+    }
+    .about-section h1 {
+        font-size: 28px;
+    }
+}
+/* Container el kbir */
+.ain-draham-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #fdfbf8; /* Lon "Creamsand" hédhi */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* El Titres (Douz, Tozeur, etc.) */
+.gallery-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    text-align: center;
+    margin: 80px 0 40px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+/* Khatt ta7t el titre mziyan */
+.gallery-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #d35400; /* Lon Terracotta */
+    margin: 15px auto 0;
+}
+
+/* El Paragraphes m-santryin w mnadhmin */
+.simple-nature-text {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* El Gallery mte3 el tsawer (Flexbox) */
+.nature-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.nature-gallery img {
+    width: calc(33.33% - 15px); /* 3 tsawer fil star */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Animation ki t-7ott el mouse 3al taswira */
+.nature-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(211, 84, 0, 0.2);
+}
+
+/* --- Table Design (Luxury Look) --- */
+table {
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; /* Bechybanou el edges m-dourin */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+th {
+    background-color: #1d1551; /* El Navy blue mte3ek */
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #fff9f0; /* Lon "fajr" sghir */
+}
+
+/* Responsive lel telifoun */
+@media (max-width: 768px) {
+    .nature-gallery img {
+        width: calc(50% - 15px); /* 2 tsawer fil telifoun */
+    }
+    .gallery-title {
+        font-size: 2rem;
+    }
+}
+.pack-section {
+    padding: 80px 20px;
+    background-color: #ffffff; /* Abyed bech tet-frez 3al page */
+    border-top: 1px solid #f0e6d2; /* Khatt sghir bech ya9sem el blassa */
+    margin-top: 50px;
+}
+
+.pack-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    flex-wrap: wrap;
+}
+
+.pack-card {
+    background: #fdfbf8;
+    padding: 40px 25px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: all 0.4s ease;
+    border: 1px solid #eee;
+}
+
+.pack-card:hover {
+    transform: translateY(-12px);
+    border-color: #d35400; /* Lon el orange/terracotta mte3 el sa7ra */
+    box-shadow: 0 15px 35px rgba(211, 84, 0, 0.1);
+}
+
+.pack-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.pack-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1d1551;
+    margin-bottom: 15px;
+}
+
+.pack-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.desert-map-section {
+    padding: 80px 20px;
+    background-color: #fdfbf8; /* Lon "Creamsand" */
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap; /* Becht-ji m-rigla fil telifoun */
+}
+
+/* Jiha el Visual */
+.map-visual {
+    flex: 1.2;
+    text-align: center;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.1));
+    transition: transform 0.4s ease;
+}
+
+.map-image:hover {
+    transform: scale(1.02);
+}
+
+/* Jiha el Details */
+.map-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.destination-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.destination-item:hover {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.step-num {
+    background-color: #d35400; /* Lon Terracotta */
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.dest-text h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1d1551;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.dest-text p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .map-container {
+        flex-direction: column;
+    }
+    .map-details {
+        width: 100%;
+    }
+}
+.sahara-activities {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.activity-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(211, 84, 0, 0.15);
+}
+
+.activity-img-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.activity-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1d1551;
+    margin-bottom: 10px;
+}
+
+.activity-info p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.vibe-tag {
+    background-color: #fdf2e9;
+    color: #d35400;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}.inventa-highlights {
+    background-color: #0f172a; /* أزرق غامق ملكي */
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    color: #c5a059; /* لون ذهبي هادئ */
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container for the cards */
+.highlights-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Card */
+.highlight-card {
+    background-color: #ffffff;
+    padding: 40px 25px 30px;
+    border-radius: 12px;
+    width: 260px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-bottom: 5px solid #c5a059; /* خط ذهبي من الأسفل */
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px); /* تحريك الكرت عند مرور الماوس */
+}
+
+/* Icon Box */
+.icon-box {
+    background: #0f172a;
+    color: #c5a059;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin: -70px auto 20px; /* تخلي الأيقونة خارجة موسطة الفوق */
+    border: 3px solid #c5a059;
+}
+
+.highlight-card h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.highlight-card ul {
+    list-style: none;
+    padding: 0;
+}
+.highlight-card ul li {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.4;
+}
+
+/* Bullet points (The luxury checkmark) */
+.highlight-card ul li::before {
+    content: "✓";
+    color: #c5a059;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
